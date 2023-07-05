@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+    margin-bottom: 20p;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 34px;
+    color: #6f87cc;
+
+}
+
+h3 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+
+}
+
+h4 {
+    font-size: 20px;
+    /*line-height: 64px;*/
+    color: #222;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+#header {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    justify-content: space-between;
+
+}
+
+#navlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navlist li {
+
+    font-size: 20px;
+    list-style: none;
+    position: relative;
+    padding: 0px 20px;
+}
+
+#navlist li a {
+    color: #222;
+    text-decoration: none;
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    #header {
+
+        padding: 1Opx 30px;
+
+    }
+
+    #navlist {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: aliceblue;
+        box-shadow: 0px 40px 60px rgba(0, 0, 9, 0.1);
+        padding: 80px 0 0 10px;
+        position: fixed;
+        transition: 0.3s;
+
+    }
+
+    #navlist li {
+        margin-bottom: 20px;
+    }
+
+    #navlist.active {
+        right: 0px;
+
+
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+
+    }
+
+    #mobile i:hover {
+        cursor: pointer;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+
+
+
+
+}
